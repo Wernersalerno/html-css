@@ -13,14 +13,15 @@
         }
         th{
             border: 1px solid black;
-            padding: 20px;
+            padding: 5px;
             font-size: 1.3em;
             font-weight: bold;
+            background-color: rgb(194, 208, 221);
         }
         td{
             border: 1px solid black;
             font-size:1.3em ;
-            padding: 20px;
+            padding: 5px;
         }
     </style>
 </head>
@@ -28,12 +29,15 @@
     <table>
     <thead>   
         <tr>
-            <th scope="col">Área</th>
-            <th scope="col">Disciplinas</th>
-            <th scope="colgroup" rowpan="2"colspan="1">Notas</th>
-            <td>Nota 1</td>
-            <th scope="col">Média</th>
-        </tr>
+            <th scope="col" rowspan="2">Área</th>
+            <th scope="col" rowspan="2">Disciplinas</th>
+            <th scope="colgroup" colspan="2">Notas</th>
+            <th scope="col" rowspan="2">Média</th>
+         </tr>
+         <tr>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+         </tr>
     </thead> 
     <tbody>
         <tr>
@@ -59,12 +63,13 @@
             <td>Biologia<td>
             <td></td>
             <td></td>
-            <td></td>
+           
         </tr>
     </tbody> 
         <thead>
             <tr>
                 <th scope="row" colspan="4">Média de Exatas</th>
+                <td></td>
             </tr>
         </thead>
     <tbody>
@@ -82,7 +87,7 @@
     </tbody>   
     <tfoot>
         <tr>
-            <th scope="row" colspan="3">Média de Humanas</th>
+            <th scope="row" colspan="4">Média de Humanas</th>
             <td></td>
         </tr>
     </tfoot>
